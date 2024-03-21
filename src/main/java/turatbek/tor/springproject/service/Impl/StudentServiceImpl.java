@@ -1,5 +1,6 @@
 package turatbek.tor.springproject.service.Impl;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     public void deleteStudent(String email) {
         repository.deleteByEmail(email);
 
