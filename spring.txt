@@ -1,0 +1,43 @@
+Software Requirements Specification (SRS) Document
+1. Introduction
+This document serves as the Software Requirements Specification (SRS) for the development of a Student Management System. The system is designed to manage student information and store it in a database. It provides endpoints for external access via API, supporting CRUD operations on student data. The system follows an n-tier architecture with three layers: Controller, Service, and Repository. It offers flexibility by supporting different implementations for storing student data: in-memory storage and database storage.
+
+2. System Overview
+The Student Management System allows users to perform the following operations:
+
+Retrieve a student by email or retrieve all students stored in the database.
+Save student information to the database.
+Update existing student information.
+Delete a student by email.
+3. System Architecture
+The system is built on an n-tier architecture with three layers:
+
+Controller Layer: Receives and handles incoming HTTP requests, directing them to the appropriate service methods.
+Service Layer: Contains business logic and performs operations on student data.
+Repository Layer: Provides data access and storage capabilities.
+4. Functional Requirements
+4.1. Controller Layer
+GET /students/{email}: Retrieves a student by email.
+GET /students: Retrieves all students stored in the database.
+POST /students: Saves a new student to the database.
+PUT /students/{email}: Updates existing student information.
+DELETE /students/{email}: Deletes a student by email.
+4.2. Service Layer
+Implements business logic for CRUD operations on student data.
+Handles data validation and error handling.
+4.3. Repository Layer
+Provides implementations for data storage.
+Supports in-memory storage and database storage.
+5. Non-Functional Requirements
+Compatibility: The API should be accessible from various devices and platforms.
+Flexibility: The system should support switching between different implementations for storing student data.
+Performance: The system should handle requests efficiently and respond in a timely manner.
+Security: Implement appropriate security measures to protect student data.
+Scalability: The system should be capable of handling increased loads without degradation in performance.
+6. Implementation Details
+The system will be developed using Spring Framework, including Spring Boot for rapid development.
+Thymeleaf will be used for creating web templates.
+Spring Data JPA will facilitate interaction with the database.
+H2 Database will be utilized for simplicity and ease of development (in-memory mode).
+7. Conclusion
+The Student Management System aims to provide a robust and flexible solution for managing student information. By adhering to the principles of n-tier architecture and leveraging the capabilities of Spring Framework, the system will demonstrate efficient handling of HTTP requests and seamless interaction with the underlying database.
