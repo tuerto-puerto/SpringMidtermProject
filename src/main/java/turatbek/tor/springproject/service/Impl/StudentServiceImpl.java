@@ -1,6 +1,7 @@
 package turatbek.tor.springproject.service.Impl;
 
 import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import turatbek.tor.springproject.model.Student;
 import turatbek.tor.springproject.repository.StudentRepository;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Primary
 public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository repository;
