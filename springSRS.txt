@@ -1,6 +1,9 @@
 Software Requirements Specification (SRS) Document
 1. Introduction
-This document serves as the Software Requirements Specification (SRS) for the development of a Student Management System. The system is designed to manage student information and store it in a database. It provides endpoints for external access via API, supporting CRUD operations on student data. The system follows an n-tier architecture with three layers: Controller, Service, and Repository. It offers flexibility by supporting different implementations for storing student data: in-memory storage and database storage.
+This document serves as the Software Requirements Specification (SRS) for the development of a Student Management System. 
+The system is designed to manage student information and store it in a database. It provides endpoints for external access via API, supporting CRUD operations on student data. 
+The system follows an n-tier architecture with three layers: Controller, Service, and Repository. 
+It offers flexibility by supporting different implementations for storing student data: in-memory storage and database storage.
 
 2. System Overview
 The Student Management System allows users to perform the following operations:
@@ -40,4 +43,6 @@ Thymeleaf will be used for creating web templates.
 Spring Data JPA will facilitate interaction with the database.
 H2 Database will be utilized for simplicity and ease of development (in-memory mode).
 7. Conclusion
-The Student Management System aims to provide a robust and flexible solution for managing student information. By adhering to the principles of n-tier architecture and leveraging the capabilities of Spring Framework, the system will demonstrate efficient handling of HTTP requests and seamless interaction with the underlying database.
+The Student Management System aims to provide a robust and flexible solution for managing student information. 
+By adhering to the principles of n-tier architecture and leveraging the capabilities of Spring Framework, 
+the system will demonstrate efficient handling of HTTP requests and seamless interaction with the underlying database.
