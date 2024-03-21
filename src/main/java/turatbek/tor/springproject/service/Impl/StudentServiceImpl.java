@@ -32,7 +32,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student updateStudent(Student student) {
-        return null;
+        return repository.save(student);
     }
 
     @Override
