@@ -3,14 +3,13 @@ package turatbek.tor.springproject.repository;
 import org.springframework.stereotype.Repository;
 import turatbek.tor.springproject.model.Student;
 
-import java.lang.module.FindException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
 @Repository
 
-public class InMemoryStudentBAO {
+public class InMemoryStudentDAO {
     private final List<Student> STUDENTS = new ArrayList<>();
 
     public List<Student> findAllStudent() {

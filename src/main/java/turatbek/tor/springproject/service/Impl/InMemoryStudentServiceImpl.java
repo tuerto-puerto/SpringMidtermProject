@@ -3,14 +3,14 @@ package turatbek.tor.springproject.service.Impl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import turatbek.tor.springproject.model.Student;
-import turatbek.tor.springproject.repository.InMemoryStudentBAO;
+import turatbek.tor.springproject.repository.InMemoryStudentDAO;
 import turatbek.tor.springproject.service.StudentService;
 
 import java.util.List;
 @Service
 @AllArgsConstructor
 public class InMemoryStudentServiceImpl implements StudentService {
-    private final InMemoryStudentBAO repository;
+    private final InMemoryStudentDAO repository;
 
     @Override
     public List<Student> findAllStudent() {
