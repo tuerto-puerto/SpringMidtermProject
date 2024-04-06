@@ -1,4 +1,7 @@
 # SpringMidtermProject
+
+https://youtu.be/xBXdmCxhI60
+
 Spring Project
 This project is a simple Spring Boot application that demonstrates basic CRUD operations for managing students. It provides RESTful endpoints to perform operations such as creating, reading, updating, and deleting student records.
 
