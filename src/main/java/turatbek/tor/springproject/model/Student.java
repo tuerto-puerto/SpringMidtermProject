@@ -7,6 +7,9 @@ import java.time.Period;
 
 @Data
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "students")
 public class Student {
     @Id
@@ -16,12 +19,11 @@ public class Student {
     private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
-    @Column(unique = true)
+//    @Column(unique = true)
     private String email;
     @Transient
     private int age;
 
-    public int getAge() {
-        return Period.between(dateOfBirth, LocalDate.now()).getYears();
-    }
+    @ManyToOne
+    private User teacher;
 }
