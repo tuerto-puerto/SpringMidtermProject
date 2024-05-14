@@ -6,7 +6,6 @@ import turatbek.tor.springproject.model.Student;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
-
 @Repository
 
 public class InMemoryStudentDAO {

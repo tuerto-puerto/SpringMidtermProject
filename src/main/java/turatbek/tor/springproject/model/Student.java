@@ -21,7 +21,6 @@ public class Student {
     @Transient
     private int age;
 
-
     public int getAge() {
         return Period.between(dateOfBirth, LocalDate.now()).getYears();
     }
