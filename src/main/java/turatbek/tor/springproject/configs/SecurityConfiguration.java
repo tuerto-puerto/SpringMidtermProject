@@ -28,8 +28,9 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.ignoringRequestMatchers("/api/**"))
                 .authorizeHttpRequests(
                         req -> req
-                                .requestMatchers("/api/v1/auth/login","/api/v1/auth/refreshToken", "/api/v1/auth/register").permitAll()
+                                .requestMatchers("/api/v1/auth/login","/api/v1/auth/refreshToken", "/api/v1/auth/signup").permitAll()
                                 .requestMatchers("/api/**").authenticated()
+                                .anyRequest().permitAll()
                 )
                 .oauth2Login(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults())
